@@ -1,0 +1,48 @@
+<div class="mainbo">
+    <div class="nobor">
+        <div class="logodiv">
+            <span style="font-weight: bold; color:rgb(128, 0, 255)">ADDRESS</span><br>
+            <span style="font-weight: bold; color:black;">BOOK</span>
+        </div>
+    </div>
+    <div class="solidbar">
+        <div class="headdiv">
+            <h2>Person Details</h2>
+        </div>
+        <div>
+            <table>
+                <tr>
+                  <th id="fname">FirstName</th>
+                  <th>LastName</th>
+                  <th>Gender</th>
+                  <th>Address</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Zip code</th>
+                  <th>Mobile Number</th>
+                  <th>Action</th>
+                </tr>
+                <tr *ngFor = "let person of allUser">
+                    <td>{{person.firstName}}</td>
+                    <td>{{person.lastName}}</td>
+                    <td>{{person.gender}}</td>
+                    <td>{{person.address}}</td>
+                    <td>{{person.city}}</td>
+                    <td>{{person.state}}</td>
+                    <td>{{person.zipcode}}</td>
+                    <td>{{person.mobileNumber}}</td>
+
+                    <div>                 
+                    <img src="../../../assets/delete.jpeg" id="{{person.id}}" alt="delete" (click)="onDelete(person.id)">
+                    <img src="../../../assets/edit.jpeg"   id="{{person.id}}" alt="edit" (click)="onUpdateData(person.id)">
+                  </div>
+                  
+                </tr>
+              </table>
+        </div>
+        <div>
+            <button mat-raised-button color="primary" routerLink="/form" class="addbutton">+Add User</button> 
+
+        </div>
+    </div>
+</div>

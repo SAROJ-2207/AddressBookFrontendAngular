@@ -1,0 +1,56 @@
+<div class="mainbo">
+    <div class="solidbor">
+       <div class="mainform">
+             PERSON ADDRESS FORM
+            <div class="form">
+                <h3>FirstName</h3>
+                <input type="text" [(ngModel)]="userDetail.firstName">
+
+                <h3>LastName</h3>
+                <input type="text" [(ngModel)]="userDetail.lastName">
+
+                <h3>Gender</h3>
+                <input type="text" [(ngModel)]="userDetail.gender">
+
+                <h3 id="number">Mobile Number</h3>
+                <input type="text" [(ngModel)]="userDetail.mobileNumber">
+                
+                <h3>Address</h3>
+                <input type="text" id="address" [(ngModel)]="userDetail.address">
+                
+                <div class="addressdetail">
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Select City</mat-label>
+                            <mat-select [(ngModel)]="userDetail.city">
+                              <mat-option value="Bhubaneswar">Bhubaneswar</mat-option>
+                              <mat-option value="Kormongal">Kormongal</mat-option>
+                              <mat-option value="Thiruwantapuram">Thiruwantapuram</mat-option>
+                              <mat-option value="Delhi">Delhi</mat-option>
+                              <mat-option value="Panaji">Panaji</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill" class="selectcity">
+                            <mat-label>Select State</mat-label>
+                            <mat-select [(ngModel)]="userDetail.state">
+                              <mat-option value="Odisha">Odisha</mat-option>
+                              <mat-option value="Karnataka">Karnataka</mat-option>
+                              <mat-option value="Jharkhand">Jharkhand</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <input type="text" id="pinnum" placeholder="zip code" [(ngModel)]="userDetail.zipcode">
+                    </div>
+            </div>
+            <div class="actionbtn">  
+                <div>
+                    <button mat-raised-button color="basic" class="btnadd" (click)="onsubmit()" id="submitButton">Add</button>
+                    <button mat-raised-button color="basic" class="btnupdate" (click)="onUpdate()" id="onUpdatePerson">Update</button>
+                    <button mat-raised-button type="reset" color="basic" class="resbutton">Reset</button>
+             </div>
+       </div> 
+    </div>
+</div>

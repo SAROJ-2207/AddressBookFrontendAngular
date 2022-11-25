@@ -1,0 +1,58 @@
+.mainbo{
+    border-style: ridge;
+    width: 80%;
+    height: 600px;
+    opacity: 1;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+.nobor{
+    border-style: hidden;
+    width: 90%;
+    height: 90px;
+    opacity: 1;
+    border-color: aliceblue;
+    border-collapse: collapse;
+    border-bottom: aliceblue;
+    margin-left: 100px;
+    display: flex;
+}
+.solidbar{
+    border-style: hidden;
+    width: 150%;
+    height: 520px;
+    opacity: 0.8;
+    display: flex;
+    margin-right: 50px;
+    background-color: rgba(128, 128, 128, 0.067); 
+    box-shadow: 10px;
+}
+.logodiv{
+    margin-top: 10px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+   
+  }
+  th {
+    padding: 25px;
+  }
+  .headdiv{
+    margin-left: 100px;
+  }
+  #fname{
+    padding: 20px;
+  }
+  .addbutton{
+    background-color:hwb(215 0% 0%);;
+  }
+  tr{
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    padding: 8px;
+  }
+  td{
+    font-weight: bold;
+  }
